@@ -1,0 +1,8 @@
+.subject-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.input-buttons{
+    width: 60% !important;
+}

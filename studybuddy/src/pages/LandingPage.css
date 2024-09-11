@@ -1,0 +1,46 @@
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(239, 49, 49);
+    z-index: 2;
+    
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: (255,255,255,0);
+    color: #852d8a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: (255,255,255,0);
+  }
+
+  #particles-id { /* Use the actual ID if it's specified */
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%; /* Ensure it covers the desired area without extending beyond */
+  }
+
+  .text-layer {
+    position: relative;
+    z-index: 10; /* Higher than the particle layer */
+}
+
+  
