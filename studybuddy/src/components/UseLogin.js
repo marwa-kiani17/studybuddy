@@ -85,8 +85,12 @@ const UseLogin = () => {
         email,
         password,
       });
+  
+      // Store the token in localStorage
+      localStorage.setItem('authToken', response.data.token);
+  
       console.log(response.data);
-      navigate('/Quiz');
+      navigate('/Dashboard');
       setErrorMessage('');  // Clear any previous error messages on successful login
     } catch (error) {
       console.error(error.response.data);
